@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Design with Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tables</h1>
+        <div class="table-grid">
+            <div class="table-item green" data-table="A01">A01</div>
+            <div class="table-item green" data-table="A02">A02</div>
+            <div class="table-item green" data-table="A03">A03</div>
+            <div class="table-item green" data-table="A04">A04</div>
+            <div class="table-item green" data-table="A05">A05</div>
+
+            <div class="table-item green" data-table="B01">B01</div>
+            <div class="table-item green" data-table="B02">B02</div>
+            <div class="table-item green" data-table="B03">B03</div>
+            <div class="table-item green" data-table="B04">B04</div>
+            <div class="table-item green" data-table="B05">B05</div>
+
+            <div class="table-item green" data-table="C01">C01</div>
+            <div class="table-item green" data-table="C02">C02</div>
+            <div class="table-item green" data-table="C03">C03</div>
+            <div class="table-item green" data-table="C04">C04</div>
+            <div class="table-item green" data-table="C05">C05</div>
+
+            <div class="table-item green" data-table="D01">D01</div>
+            <div class="table-item green" data-table="D02">D02</div>
+            <div class="table-item green" data-table="D03">D03</div>
+            <div class="table-item green" data-table="D04">D04</div>
+            <div class="table-item green" data-table="D05">D05</div>
+        </div>
+    </div>
+
+    <!-- ฟอร์มแบบ popup -->
+    <div id="form-popup" class="form-popup">
+        <form class="form-container">
+            <h2>Reservation Form</h2>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" id="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" id="email" required>
+
+            <label for="phone"><b>Phone</b></label>
+            <input type="tel" placeholder="Enter Phone Number" id="phone" required>
+
+            <label for="table-number"><b>Table</b></label>
+            <input type="text" id="table-number" readonly>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
